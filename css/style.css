@@ -22,3 +22,14 @@
 	padding: 70px 30px;
 	margin: 0px;
 }
+body{
+	padding-top: 50px;
+	z-index: 0;
+}
+.navbar-dark{
+	background: #888888;
+}
+.breadcrumb{
+	margin: 0px;
+	padding: 5px;
+}
