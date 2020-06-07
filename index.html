@@ -7,10 +7,10 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
 	<!-- Bootstrap CSS link -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="./css/style.css">
 
    <title>Ristorante Con Fusion</title>
 </head>
@@ -31,16 +31,19 @@
             </div>
         </div>
     </nav>
-    <header class=jumbotron>
+    <header class="jumbotron">
         <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
+            <div class="row row-header justify-content-center">
+                <div class="col-12 col-md-6">
                     <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                        lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center">
+                <div class="col-12 col-md-3 align-self-center">
                     <img src="img/logo.png" alt="The logo for Ristorante Con Fusion" class="image-fluid">
-
+                </div>
+                <div class="col-12 col-md-3 align-self-center">
+                    <a href="#tableReservation" class="btn btn-warning btn-block">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -69,11 +72,11 @@
             </div>
             <div class="col-12 col-sm-8 col-md-9">
                 <div class="media">
-                    <img src="img/buffet.png" alt="Buffet picture." class="img-thumbnail d-flex mr-3 align-self-center">
                     <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-pill badge-dark">New</span></h2>
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
+                    <img src="img/buffet.png" alt="Buffet picture." class="img-thumbnail d-flex mr-3 align-self-center">
                 </div>
 
             </div>
@@ -93,6 +96,75 @@
                     </div>
                 </div>
 			</div>
+        </div>
+
+        <div class="row row-content" id="tableReservation">
+            <div class="col-12 col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        <h1>Reserve a Table</h1>
+                    </div>
+                    <div class="card-body">
+                        <form action="#">
+                            <div class="form-group form-row align-items-center">
+                                <div class="col-md-2">
+                                    <label class="form-check-label">Number of Guests</label>
+                                </div>
+                                <div class="col-md-10">
+
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" id="oneMember" name="numberOfPeople" class="form-check-input">
+                                        <label for="oneMember" class="form-check-label">1</label>                                   
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                    <input type="radio" id="twoMember" name="numberOfPeople" class="form-check-input">
+                                    <label for="twoMember" class="form-check-label">2</label>
+                                    </div>
+                                    
+                                    <div class="form-check form-check-inline">
+                                    <input type="radio" id="threeMember" name="numberOfPeople" class="form-check-input">
+                                    <label for="threeMember" class="form-check-label">3</label>
+                                    </div>
+                                    
+                                    <div class="form-check form-check-inline">
+                                    <input type="radio" id="fourMember" name="numberOfPeople" class="form-check-input">
+                                    <label for="fourMember" class="form-check-label">4</label>
+                                    </div>
+                                    
+
+                                    <div class="form-check form-check-inline">
+                                    <input type="radio" id="fiveMember" name="numberOfPeople" class="form-check-input">
+                                    <label for="fiveMember" class="form-check-label">5</label>
+                                    </div>
+                                                                       
+                                    <div class="form-check form-check-inline">
+                                    <input type="radio" id="sixMember" name="numberOfPeople" class="form-check-input">
+                                    <label for="sixMember" class="form-check-label">6</label>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="form-group form-row align-items-center">
+                                <div class="col-md-2">
+                                    <label for="date">Date and time</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" placeholder="Date">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -139,8 +211,8 @@
     </footer>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
