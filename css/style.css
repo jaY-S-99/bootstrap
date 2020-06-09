@@ -32,3 +32,9 @@ body{
 	margin: 0px;
 	padding: 5px;
 }
+.nav-link{
+	color: rgb(202, 202, 202);
+}
+.nav-link:hover{
+	color: rgb(129, 129, 129);
+}
