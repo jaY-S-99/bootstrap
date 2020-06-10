@@ -38,3 +38,18 @@ body{
 .nav-link:hover{
 	color: rgb(129, 129, 129);
 }
+.carousel{
+	background: #ddd;
+}
+.carousel-item{
+	min-height: 200px;
+}
+.carousel-item img{
+	position: absolute;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+.carousel-control-width{
+	width: 50px;
+}
