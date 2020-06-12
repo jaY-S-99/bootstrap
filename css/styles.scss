@@ -1,5 +1,7 @@
 $lgt-gray: #ddd;
-$background-dark: #888888;
+$background-dark: #cecece;
+$modal-header-color: $background-dark;
+$modal-body-color: $lgt-gray;
 
 // Height vars
 $carousel-item-height: 300px;
@@ -8,6 +10,16 @@ $carousel-item-height: 300px;
 @mixin zero-margin($pad-up-dwn,$pad-lf-rt){
     margin: 0px auto;
     padding: $pad-up-dwn $pad-lf-rt;
+}
+
+.modal-header{
+	background-color: $modal-header-color;
+	.modal-title{
+		color: rgb(66, 66, 66);
+	}
+}
+.modal-body{
+	background-color: $modal-body-color;
 }
 
 .row-header{
