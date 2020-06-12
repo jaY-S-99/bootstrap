@@ -1,0 +1,74 @@
+$lgt-gray: #ddd;
+$background-dark: #888888;
+
+// Height vars
+$carousel-item-height: 300px;
+
+//mixins
+@mixin zero-margin($pad-up-dwn,$pad-lf-rt){
+    margin: 0px auto;
+    padding: $pad-up-dwn $pad-lf-rt;
+}
+
+.row-header{
+    @include zero-margin(0px,0px);
+}
+.row-content{
+	@include zero-margin(50px,0px);
+	border-bottom: 1px ridge;
+	min-height: 100px;
+}
+.row-content-title{
+	margin: auto;
+	padding: 20px;
+}
+.footer{
+	background-color: #e5e5e5;
+	@include zero-margin(20px,0px);
+}
+.jumbotron{
+	padding: 70px 30px;
+	margin: 0px;
+}
+body{
+	padding-top: 50px;
+	z-index: 0;
+}
+.navbar-dark{
+	background: $background-dark;
+}
+.breadcrumb{
+	margin: 0px;
+	padding: 5px;
+}
+.nav-link{
+	color: rgb(202, 202, 202);
+}
+.nav-link:hover{
+	color: rgb(129, 129, 129);
+}
+.carousel{
+    background: $lgt-gray;
+    .carousel-item{
+        height: $carousel-item-height;
+    img{
+        position: absolute;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        }
+    }
+}
+
+.carousel-control-width{
+	width: 50px;
+}
+.opacity{
+	opacity: 0.3;
+}
+#carouselButton{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: 2;
+}
