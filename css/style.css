@@ -53,3 +53,12 @@ body{
 .carousel-control-width{
 	width: 50px;
 }
+.opacity{
+	opacity: 0.3;
+}
+#carouselButton{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: 2;
+}
